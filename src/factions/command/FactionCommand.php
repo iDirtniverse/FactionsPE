@@ -67,7 +67,7 @@ class FactionCommand extends Command
             new Name($plugin, "name", "Rename faction", Permissions::NAME),
             new Info($plugin, "info", "Get faction information", Permissions::INFO),
             new Description($plugin, "description", "Set faction's description", Permissions::DESCRIPTION),
-            new SeeChunk($plugin, "seechunk", "See chunk borders", Permissions::SEECHUNK, ["sc"])
+            new SeeChunk($plugin, "seechunk", "See chunk borders", Permissions::SEECHUNK, ["sc", "border"])
         ];
 
         if ($plugin->economyEnabled()) {
